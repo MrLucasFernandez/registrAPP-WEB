@@ -1,0 +1,149 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #012c56;
+    color: #fff;
+    border-radius: 10px; /* Redondear bordes de la web */
+}
+
+/* Estilos para el título principal */
+h1 {
+    color: #b49300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #ffffff; /* Línea separadora con color azul */
+    padding: 10px;
+    border-radius: 10px; /* Redondear bordes del título */
+}
+
+/* Estilos para subtítulos */
+h2 {
+    color: #012c56;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid #012c56; /* Línea separadora con color verde */
+    padding: 10px;
+    border-radius: 10px; /* Redondear bordes del título */
+}
+
+/* Estilos para el logotipo en el título */
+h1 img {
+    max-width: 100px;
+    border-radius: 9%; /* Redondear bordes del logo */
+}
+p {
+    color: #012c56;
+    font-size: 16px;
+}
+
+/* Estilos para los mensajes en PC y dispositivos móviles */
+#pc-message, #mobile-message {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Estilos para el código QR en PC */
+#pc-qr-code {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    border-radius: 10px; /* Redondear bordes del código QR */
+}
+
+/* Estilos para el botón de descarga en dispositivos móviles */
+#mobile-download-btn {
+    background-color: #249743;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos al pasar el ratón sobre el botón de descarga en dispositivos móviles */
+#mobile-download-btn:hover {
+    background-color: #227438;
+}
+
+#contenedor {
+    position: relative;
+}
+
+/* Estilos específicos para PC*/
+@media only screen and (min-width: 1200px) {
+    #pc-message {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    #pc-qr-code {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #mobile-message {
+        display: none;
+    }
+
+    #mobile-download-btn {
+        display: none;
+    }
+}
+
+/* Estilos específicos para dispositivos móviles*/
+@media only screen and (max-width: 1199px) {
+    #mobile-message {
+        display: block;
+        margin: 0 auto;
+        max-width: 400px;
+        width: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(-50%, 50%);
+    }
+
+    #pc-message {
+        display: none;
+    }
+
+    #pc-qr-code {
+        display: none;
+    }
+
+    #mobile-download-btn {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+.myButton {
+    
+    background-color:#276638;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:bold;
+    padding:15px 15px;
+
+}
+
+.myButton:active {
+    position:relative;
+    top:1px;
+}
